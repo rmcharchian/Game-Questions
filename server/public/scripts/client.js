@@ -33,6 +33,11 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
         }
       }
     })
+    .when('/askQuestion', {
+      templateUrl: '/views/templates/askQuestion.html',
+      controller: 'AskQuestionController as vm'
+    })
+
     .otherwise({
       template: '<h1>404</h1>'
     });
