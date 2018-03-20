@@ -38,6 +38,14 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 
 Link to a read-only version of your scope document or other relevant documentation here (optional). Remove if unused.
 
+## Features to Complete
+
+- [ ] Database
+- [ ] askQuestions html, controller
+  - [ ] Game name text entry field - type or say
+  - [ ] Game question entry field - type or say
+- [ ] NEXT
+
 ### Completed Features
 
 High level list of items completed.
