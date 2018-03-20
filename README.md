@@ -38,6 +38,12 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 
 Link to a read-only version of your scope document or other relevant documentation here (optional). Remove if unused.
 
+## Questions
+
+- [ ] On askQuestions.html angular.js message in console.  Also, is there a reason to have the angular.min.js.gzip file in vendors?  Haven't seen it before and does not appear to be doing anything.
+- [ ] On index.html I originally installed popper.js because the Bootstrap 4 page said I would need it.  Do I?
+- [ ] 
+
 ## Features to Complete
 
 - [ ] Database
