@@ -42,7 +42,8 @@ Link to a read-only version of your scope document or other relevant documentati
 
 - [ ] On askQuestions.html angular.js message in console.  Also, is there a reason to have the angular.min.js.gzip file in vendors?  Haven't seen it before and does not appear to be doing anything.
 - [ ] On index.html I originally installed popper.js because the Bootstrap 4 page said I would need it.  Do I?
-- [ ] 
+- [ ] What voice recognition API should I use?  How does it save the info in the database?
+- [ ] When someone asks a question they don't log in, but we want to keep their question, and respond to them if their question is answered at a later date.  Login?
 
 ## Features to Complete
 
