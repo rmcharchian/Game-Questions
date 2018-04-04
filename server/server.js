@@ -1,12 +1,12 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser');
 
-const passport = require('./strategies/sql.localstrategy');
-const sessionConfig = require('./modules/session-middleware');
+var passport = require('./strategies/sql.localstrategy');
+var sessionConfig = require('./modules/session-middleware'); //could be session.config
 
 // Route includes
-const userRouter = require('./routes/user.router');
+var userRouter = require('./routes/usernew.router');
 
 // Body parser middleware
 app.use(bodyParser.json());
@@ -25,7 +25,7 @@ app.use('/api/user', userRouter);
 // Serve static files
 app.use(express.static('server/public'));
 
-const PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 5000;
 
 /** Listen * */
 app.listen(PORT, () => {

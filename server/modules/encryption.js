@@ -10,6 +10,8 @@ const publicAPI = {
     return bcrypt.hashSync(password, salt);
   },
   comparePassword(candidatePassword, storedPassword) {
+    console.log('comparing passwords');
+    console.log('candidatePassword, storedPassword');
     /*
        This takes in the candidate password (what the user entered) to check it.
        The stored password has the original salt, so it will run the
