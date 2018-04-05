@@ -1,8 +1,8 @@
-const bcrypt = require('bcrypt');
+var bcrypt = require('bcrypt');
 
-const SALT_WORK_FACTOR = 10;
+var SALT_WORK_FACTOR = 10;
 
-const publicAPI = {
+var publicAPI = {
   encryptPassword(password) {
     const salt = bcrypt.genSaltSync(SALT_WORK_FACTOR); // This generates a random salt
     // This next line hashes the user password and the random salt
