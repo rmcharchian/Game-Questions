@@ -5,11 +5,11 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
   console.log('myApp -- config')
   $routeProvider
     .when('/', {
-      redirectTo: 'home'
+      redirectTo: 'askQuestion' //was home
     })
-    .when('/home', {
-      templateUrl: '/views/templates/home.html',
-      controller: 'LoginController as vm',
+    .when('/askQuestion', {
+      templateUrl: '/views/templates/askQuestion.html',
+      controller: 'AskQuestionController as vm',
     })
     .when('/register', {
       templateUrl: '/views/templates/register.html',

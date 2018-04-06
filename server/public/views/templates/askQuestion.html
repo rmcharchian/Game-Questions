@@ -9,7 +9,21 @@
 
       <!-- The following are all simply examples of some forms I might use later on -->
       <form>
-            <div class="form-group">
+        <label for="game_name" aria-placeholder="Game Name">Enter Name of Game</label>
+        <input type="text" placeholder ="Game Name" ng-model="lc.newDog.dog_name">
+ 
+        <label for="breed" aria-placeholder="Breed">Breed</label>
+        <input type="text" placeholder ="Breed" ng-model="lc.newDog.breed">
+ 
+        <button class="btn btn-default" ng-click="lc.addDog(lc.newDog)">Submit New Dog</button>  
+        
+        
+        
+        
+        
+        
+        
+        <div class="form-group">
               <label for="exampleInputEmail1">Enter Name of Game</label>
               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name of Your Board Game">
             </div>

@@ -48,6 +48,7 @@ Link to a read-only version of your scope document or other relevant documentati
 ## Features to Complete
 
 - [ ] Database
+- [ ] Login does not work
 - [ ] askQuestions html, controller
   - [ ] Game name text entry field - type or say
   - [ ] Game question entry field - type or say
@@ -57,8 +58,8 @@ Link to a read-only version of your scope document or other relevant documentati
 
 High level list of items completed.
 
-- [x] Feature a
-- [x] Feature b
+- [x] Register User works
+- [x] 
 
 ### Next Steps
 
