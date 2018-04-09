@@ -11,6 +11,10 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
       templateUrl: '/views/templates/askQuestion.html',
       controller: 'AskQuestionController as vm',
     })
+    .when('/addQuestion', {
+      templateUrl: '/views/templates/addQuestion.html',
+      controller: 'AddQuestionController as vm'
+    })
     .when('/register', {
       templateUrl: '/views/templates/register.html',
       controller: 'LoginController as vm'
@@ -36,6 +40,10 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     .when('/askQuestion', {
       templateUrl: '/views/templates/askQuestion.html',
       controller: 'AskQuestionController as vm'
+    })
+    .when('/answerResults', {
+      templateUrl: '/views/templates/answerResults.html',
+      controller: 'AnswerResultsController as vm'
     })
     .when('/answerResults', {
       templateUrl: '/views/templates/answerResults.html',
