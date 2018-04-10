@@ -8,6 +8,7 @@ var sessionConfig = require('./modules/session-middleware'); //could be session.
 // Route includes
 var userRouter = require('./routes/usernew.router');
 var registerRouter = require('./routes/register.router');
+var addQuestionRouter = require('./routes/addQuestion.router');
 
 // Body parser middleware
 app.use(bodyParser.json());
@@ -24,6 +25,7 @@ app.use(passport.session());
 // app.use('/api/usernew', userRouter);
 app.use('/usernew', userRouter);
 app.use('/register', registerRouter);
+app.use('/addQuestion', addQuestionRouter);
 
 // Serve static files
 app.use(express.static('server/public'));

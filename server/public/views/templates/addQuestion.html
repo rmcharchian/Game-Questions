@@ -1,10 +1,6 @@
 <div class="container">
     <h4>Thank you for helping to improve the Board Game Questions Community</h1>
 
-    
-
-   
-
       <form>
           <!-- keep these notes for lc.newDog.dog info when entering questions into DB -->
         <!-- <label for="game_name" aria-placeholder="Game Name">Enter Name of Game</label>
@@ -13,11 +9,14 @@
         <label for="breed" aria-placeholder="Breed">Breed</label>
         <input type="text" placeholder ="Breed" ng-model="lc.newDog.breed">
  
-        <button class="btn btn-default" ng-click="lc.addDog(lc.newDog)">Submit New Dog</button>   -->
+        <button class="btn btn-default" ng-click="lc.addDog(lc.newDog)">Submit New Dog</button>  -->
     
         
         <div class="form-group">
-              <label for="Name of Game">Enter Name of Game</label>
+              <!-- <label for="gamename">Enter Name of Game</label>
+              <input type="text" class="form-control" id="addQuestion" placeholder="Name of Board Game" ng-model="lc.addQuestion> -->
+
+              <label for="gamename">Enter Name of Game</label>
               <input type="text" class="form-control" id="addQuestion" placeholder="Name of Board Game">
             </div>
             <div class="form-group">
@@ -40,7 +39,7 @@
               <input type="text" class="form-control" id="pdf" placeholder="Paste Video Link">
             </div>
 
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default" ng-click="lc.addQuestion">Submit</button>
           </form>
 
   </div>
