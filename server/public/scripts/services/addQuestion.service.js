@@ -1,5 +1,26 @@
 myApp.service('AddQuestionService', ['$http', function ($http) {
-    //     console.log('AddQuestionService Loaded');
+        console.log('AddQuestionService Loaded');
+
+        var self = this;
+
+        self.getQuestion=function () {
+            $http.get('/games').then(function (response) { //naming game?
+                console.log('got item', response);
+                self.games.list = response.data;
+                })
+        }
+
+
+
+
+        self.addQuestion=function (newQuestion) {
+            console.log('add question button clicked');
+            console.log('newQuestion');
+            $http.post('/gamename', newQuestion).then(function (response) {
+                console.log('post item', response);
+                self.getQuestion();
+            })
+        }
 
 
 
