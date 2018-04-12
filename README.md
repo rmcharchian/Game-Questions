@@ -1,10 +1,12 @@
-# Name of Project
+# Project Name - Board Game Questions
 
-One Paragraph of project description goes here. Link to the live version of the app if it's hosted on Heroku.
+The idea behind Board Game Questions is to help Board Gamers find questions to game questions during game play.  If a question comes up, players usually look at the rules, then FAQ's, then search online, etc.  Our goal is to make a resource where the players and say the game, the question, and be given an answer or answers to the question.  Logged in users will also be able to add questions and answers. (Link to the live version of the app when it's hosted on Heroku.)
 
 ## Built With
 
-List technologies and frameworks here
+AngularJS
+Bootstrap
+PostgreSQL
 
 ## Getting Started
 
