@@ -49,7 +49,10 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
       templateUrl: '/views/templates/answerResults.html',
       controller: 'AnswerResultsController as vm'
     })
-
+    .when('/home', {
+      templateUrl: '/views/templates/home.html',
+      controller: 'HomeController as vm'
+    })
 
 
 
