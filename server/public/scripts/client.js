@@ -9,19 +9,19 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     })
     .when('/askQuestion', {
       templateUrl: '/views/templates/askQuestion.html',
-      controller: 'AskQuestionController as vm',
+      controller: 'AskQuestionController as askqc',
     })
     .when('/addQuestion', {
       templateUrl: '/views/templates/addQuestion.html',
-      controller: 'AddQuestionController as vm'
+      controller: 'AddQuestionController as addqc'
     })
     .when('/register', {
       templateUrl: '/views/templates/register.html',
-      controller: 'LoginController as vm'
+      controller: 'LoginController as lc'
     })
     .when('/user', {
       templateUrl: '/views/templates/user.html',
-      controller: 'UserController as vm',
+      controller: 'UserController as uc',
       resolve: {
         getuser : function(UserService){
           return UserService.getuser();
@@ -30,28 +30,20 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     })
     .when('/info', {
       templateUrl: '/views/templates/info.html',
-      controller: 'InfoController as vm',
+      controller: 'InfoController as ic',
       resolve: {
         getuser : function(UserService){
           return UserService.getuser();
         }
       }
     })
-    .when('/askQuestion', {
-      templateUrl: '/views/templates/askQuestion.html',
-      controller: 'AskQuestionController as vm'
-    })
     .when('/answerResults', {
       templateUrl: '/views/templates/answerResults.html',
-      controller: 'AnswerResultsController as vm'
-    })
-    .when('/answerResults', {
-      templateUrl: '/views/templates/answerResults.html',
-      controller: 'AnswerResultsController as vm'
+      controller: 'AnswerResultsController as answerrc'
     })
     .when('/home', {
       templateUrl: '/views/templates/home.html',
-      controller: 'HomeController as vm'
+      controller: 'HomeController as hc'
     })
 
 
